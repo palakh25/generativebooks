@@ -24,6 +24,10 @@ img:hover {
 
 /* stacking  */
 @font-face {
+  font-family: "hindi";
+  src: url("ArivndrPomt-pMLD.ttf") format("opentype");
+}
+@font-face {
     font-family: "handwriting";
     src: url("Creattion\ Demo.otf") format("opentype");
 }
@@ -40,11 +44,11 @@ img:hover {
 
       #title {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        font-size: 150px;
+        top: 30%;
+         left: 4%; 
+        /* transform: translate(-50%, -50%);
+       */
+        font-size: 460px;
         font-family: "helvetica";
         z-index: 100;
       }
@@ -55,11 +59,11 @@ img:hover {
       }
       #handwritten{
         position: absolute;
-        top: 60%;
+        top: 70%;
         left: 70%;
         transform: translate(-50%, -50%);
         text-align: center;
-        font-size: 30px;
+        font-size: 50px;
         font-family: "handwriting";
         z-index: 100; 
         color: red;

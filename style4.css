@@ -1,39 +1,86 @@
 @font-face {
   font-family: "handwriting";
-  src: url("Creattion\ Demo.otf") format("opentype");
+  src: url("Creattion\ Demo.otf") format("opentype");}
 
-
-}body{
+  @font-face {
+    font-family: "h";
+    src: url("Metropolis-Light.otf") format("opentype");}
+  
+    @font-face {
+      font-family: "hindi";
+      src: url("ArivndrPomt-pMLD.ttf") format("opentype");
+  }
+body{
     max-width: 70%;
     margin:100 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    /* height: 100%; */
     font: 24px;
     font-family: "helvetica";
   }
-  
+  #name{
+    position: absolute;
+    top: 5%;
+   left: 120px;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-size: 30px;
+    font-family: "helvetica";
+    z-index: 100;
+  }
+
+  #name2{
+    position: absolute;
+    top: 5%;
+   right: 0px;
+    transform: translate(-50%, -50%);
+    text-align: right;
+    font-size: 30px;
+    font-family: "helvetica";
+    z-index: 100;
+  }
+  @font-face {
+    font-family: "h";
+    src: url("Metropolis-Light.otf") format("opentype");}
   .heading{
-    font-size: 100px !important;
+    font-size: 140px !important;
+    font-family: "h";
+    font-style: italic;
+    
+
   }
   
   .intro{
     position: relative;
-    top: 300px;
+    top: 200px;
   }
   .intro{
   
     left: 15%;
     font-style: bold;
-    font-size: 30px;
+    font-size: 150px;
+    font-family: "hindi";
   
     }
-    #aboutt{
+    .intro:hover span {
+      display: none
+    }
+    
+    .intro:hover:before {
+      content: "SANSKRITI";
+      font-family: "h";
+      font-style: italic;
+      color: red;
+  
+    }
+    
+    .aboutt{
       position: relative;
-      top: 1900px;
+      top: 200px;
       left: 5%;
-  font-size: 22px;
+  font-size: 35px;
   width: 75%;
   font-family: Arial, Helvetica, sans-serif;
     }
@@ -47,6 +94,7 @@
   font-size: 24px;
   color: black;
   transition: all 0.5s ease;
+  font-family: "h";
 
   }
   .about{
@@ -76,14 +124,14 @@
 /* lohri */
 
 .lohri{
-    position: relative;
-    top: 1000px;
+  position: relative;
+  top: 1000px;
   }
   
   .lohri img{
     display: flex;
   flex-wrap: wrap;
-    width:30%;
+    width:50%;
     position: absolute;
     z-index:20;
     transition:all .5s;
@@ -121,7 +169,7 @@
 
   .title-lohri{
     position: relative;
-    top: 100px;
+    top: 1000px;
     left: 75%;
     font-style: bold;
     font-size: 30px;
@@ -129,7 +177,7 @@
     }
     .about-lohri{
       position: relative;
-      top: 100px;
+  top: 1000px;
       left: 75%;
   font-size: 22px;
   width: 35%;
@@ -238,7 +286,7 @@ width: 65%;
   position: relative;
   top: 2000px;
   left: 75%;
-font-size: 22px;
+font-size: 30px;
 width: 65%;
 color: red;
 font-family: "handwriting";
@@ -344,7 +392,7 @@ width: 35%;
 .kaleera{
     position: relative;
     top: 2500px;
-    left: 400px;
+    left: 450px;
   }
   
   .kaleera img{
@@ -403,6 +451,16 @@ width: 35%;
       left: 5%;
   font-size: 22px;
   width: 35%;
+    }
+    .hidden2{
+      display: none;
+      position: relative;
+      top: 2500px;
+      left: 5%;
+    font-size: 30px;
+    width: 65%;
+    color: red;
+    font-family: "handwriting";
     }
   @media screen and (max-width:500px){
     .kaleera1{
@@ -464,7 +522,7 @@ width: 35%;
   .title-saree{
     position: relative;
     top: 3500px;
-    left: 75%;
+    left: 55%;
     font-style: bold;
     font-size: 30px;
   
@@ -541,7 +599,7 @@ width: 35%;
   .title-haldi{
     position: relative;
     top: 4500px;
-    left: 75%;
+    left: 70%;
     font-style: bold;
     font-size: 30px;
   
@@ -549,9 +607,19 @@ width: 35%;
     .about-haldi{
       position: relative;
       top: 4500px;
-      left: 75%;
+      left: 70%;
   font-size: 22px;
   width: 35%;
+    }
+    .hidden3{
+      display: none;
+      position: relative;
+      top: 4500px;
+      left: 70%;
+    font-size: 30px;
+    width: 65%;
+    color: red;
+    font-family: "handwriting";
     }
  
   @media screen and (max-width:500px){
@@ -619,7 +687,7 @@ width: 35%;
   .title-sangeet{
     position: relative;
     top: 5500px;
-    left: 75%;
+    left: 70%;
     font-style: bold;
     font-size: 30px;
   
@@ -627,9 +695,19 @@ width: 35%;
     .about-sangeet{
       position: relative;
       top: 5500px;
-      left: 75%;
+      left: 70%;
   font-size: 22px;
   width: 35%;
+    }
+    .hidden4{
+      display: none;
+      position: relative;
+      top: 5500px;
+      left: 70%;
+    font-size: 30px;
+    width: 65%;
+    color: red;
+    font-family: "handwriting";
     }
  
   @media screen and (max-width:500px){
@@ -650,12 +728,12 @@ width: 35%;
 /* baaratip */
 .baraatip{
     position: relative;
-    top: 6500px;
-    left: 200px;
+    top: 6200px;
+    left: 50px;
   }
   
 .baraatip img{
-    width:40%;
+    width:50%;
     position: absolute;
     z-index:20;
     transition:all .5s;
@@ -692,7 +770,7 @@ width: 35%;
   }
   .title-baraatip{
     position: relative;
-    top: 6500px;
+    top: 6200px;
     left: 75%;
     font-style: bold;
     font-size: 30px;
@@ -700,7 +778,7 @@ width: 35%;
     }
     .about-baraatip{
       position: relative;
-      top: 6500px;
+      top: 6200px;
       left: 75%;
   font-size: 22px;
   width: 35%;
@@ -724,7 +802,7 @@ width: 35%;
 /* sarwala */
 .sarwala{
     position: relative;
-    top: 7500px;
+    top: 7200px;
     left: 100px;
   }
   
@@ -768,7 +846,7 @@ width: 35%;
  
   .title-sarwala{
     position: relative;
-    top: 7500px;
+    top: 7200px;
     left: 65%;
     font-style: bold;
     font-size: 30px;
@@ -776,7 +854,7 @@ width: 35%;
     }
     .about-sarwala{
       position: relative;
-      top: 7500px;
+      top: 7200px;
       left: 65%;
   font-size: 22px;
   width: 35%;
@@ -799,7 +877,7 @@ width: 35%;
 
 .b{
     position: relative;
-    top: 8500px;
+    top: 8200px;
   }
   
   .b img{
@@ -856,7 +934,7 @@ width: 35%;
    
   
       position: relative;
-      top: 8500px;
+      top: 8200px;
       left: 70%;
       font-style: bold;
       font-size: 30px;
@@ -866,7 +944,7 @@ width: 35%;
         
         .about-b{
           position: relative;
-          top: 8500px;
+          top: 8200px;
           left: 70%;
       font-size: 22px;
       width: 35%;
@@ -903,7 +981,7 @@ width: 35%;
 
 .d{
     position: relative;
-    top: 9100px;
+    top: 8900px;
   }
   
   .d img{
@@ -951,7 +1029,7 @@ width: 35%;
 
   .title-d{
     position: relative;
-    top: 9100px;
+    top: 8900px;
     left: 70%;
     font-style: bold;
     font-size: 30px;
@@ -959,11 +1037,22 @@ width: 35%;
     }
     .about-d{
       position: relative;
-      top: 9100px;
+      top: 8900px;
       left: 70%;
   font-size: 22px;
   width: 35%;
     }
+    .hidden5{
+      display: none;
+      position: relative;
+      top: 8900px;
+      left: 70%;
+    font-size: 30px;
+    width: 65%;
+    color: red;
+    font-family: "handwriting";
+    }
+
 
 
   @media screen and (max-width:500px){
@@ -985,7 +1074,7 @@ width: 35%;
      /* din  */
      .din{
         position: relative;
-        top: 10200px;
+        top: 10000px;
         left: 50%;
       }
       
@@ -1023,7 +1112,7 @@ width: 35%;
 
       .title-din{
         position: relative;
-        top: 10200px;
+        top: 10000px;
         left: 5%;
         font-style: bold;
         font-size: 30px;
@@ -1031,10 +1120,20 @@ width: 35%;
         }
         .about-din{
           position: relative;
-          top: 10200px;
+          top: 10000px;
           left: 5%;
       font-size: 22px;
       width: 35%;
+        }
+        .hidden6{
+          display: none;
+          position: relative;
+          top: 10000px;
+          left: 5%;
+        font-size: 30px;
+        width: 65%;
+        color: red;
+        font-family: "handwriting";
         }
       @media screen and (max-width:500px){
         .din1{
@@ -1049,7 +1148,7 @@ width: 35%;
 /* varmala */
 .v{
     position: relative;
-    top: 10800px;
+    top: 10600px;
   }
   
   .v img{
@@ -1111,7 +1210,7 @@ width: 35%;
 
   .title-V{
     position: relative;
-    top: 10800px;
+    top: 10600px;
     left: 70%;
     font-style: bold;
     font-size: 30px;
@@ -1119,10 +1218,20 @@ width: 35%;
     }
     .about-V{
       position: relative;
-      top: 10800px;
+      top: 10600px;
       left: 70%;
   font-size: 22px;
   width: 35%;
+    }
+    .hidden7{
+      display: none;
+      position: relative;
+      top: 10600px;
+      left: 70%;
+    font-size: 30px;
+    width: 65%;
+    color: red;
+    font-family: "handwriting";
     }
   @media screen and (max-width:500px){
     .v1{
@@ -1155,7 +1264,7 @@ width: 35%;
 /* vidaai */
 .vidaai{
     position: relative;
-    top: 12000px;
+    top: 11400px;
   }
   
   .vidaai img{
@@ -1196,7 +1305,7 @@ width: 35%;
 
   .title-vidaai{
     position: relative;
-    top: 12000px;
+    top: 11400px;
     left: 70%;
     font-style: bold;
     font-size: 30px;
@@ -1204,7 +1313,7 @@ width: 35%;
     }
     .about-vidaai{
       position: relative;
-      top: 12000px;
+      top: 11400px;
       left: 70%;
   font-size: 22px;
   width: 35%;
@@ -1224,7 +1333,7 @@ width: 35%;
 /* kanyadaan */
 .k{
     position: relative;
-    top: 13100px;
+    top: 12400px;
   }
   
   .k img{
@@ -1255,7 +1364,7 @@ width: 35%;
  
   .title-k{
     position: relative;
-    top: 13000px;
+    top: 12400px;
     left: 55%;
     font-style: bold;
     font-size: 30px;
@@ -1263,7 +1372,7 @@ width: 35%;
     }
     .about-k{
       position: relative;
-      top: 13000px;
+      top: 12400px;
       left: 55%;
   font-size: 22px;
   width: 35%;
@@ -1277,7 +1386,7 @@ width: 35%;
 
 .t{
     position: relative;
-    top: 14100px;
+    top: 13600px;
   }
   
   .t img{
@@ -1320,16 +1429,16 @@ width: 35%;
   
   .title-t{
     position: relative;
-    top: 14300px;
-    left: 75%;
+    top: 13600px;
+    left: 60%;
     font-style: bold;
     font-size: 30px;
   
     }
     .about-t{
       position: relative;
-      top: 14300px;
-      left: 75%;
+      top: 13600px;
+      left: 60%;
   font-size: 22px;
   width: 35%;
     }
@@ -1351,7 +1460,7 @@ width: 35%;
 /* diwali */
 .diwali{
     position: relative;
-    top: 15200px;
+    top: 14600px;
   }
   
   .diwali img{
@@ -1393,18 +1502,28 @@ width: 35%;
 
   .title-diwali{
     position: relative;
-    top: 15200px;
-    left: 70%;
+    top: 14600px;
+    left: 65%;
     font-style: bold;
     font-size: 30px;
   
     }
     .about-diwali{
       position: relative;
-      top: 15200px;
-      left: 70%;
+      top: 14600px;
+      left: 65%;
   font-size: 22px;
   width: 35%;
+    }
+    .hidden8{
+      display: none;
+      position: relative;
+      top: 14600px;
+      left: 65%;
+    font-size: 30px;
+    width: 65%;
+    color: red;
+    font-family: "handwriting";
     }
   @media screen and (max-width:500px){
     .diwali1{
@@ -1425,7 +1544,7 @@ holi */
 
 .holi{
     position: relative;
-    top: 16500px;
+    top: 15600px;
   }
   
   .holi img{
@@ -1464,7 +1583,7 @@ holi */
 
   .title-holi{
     position: relative;
-    top: 16500px;
+    top: 15600px;
     left: 65%;
     font-style: bold;
     font-size: 30px;
@@ -1472,7 +1591,7 @@ holi */
     }
     .about-holi{
       position: relative;
-      top: 16500px;
+      top: 15600px;
       left: 65%;
   font-size: 22px;
   width: 35%;
@@ -1494,7 +1613,7 @@ holi */
 
 .rakhi{
     position: relative;
-    top: 18000px;
+    top: 16900px;
   }
   
   .rakhi img{
@@ -1565,7 +1684,7 @@ holi */
 
   .title-rakhi{
     position: relative;
-    top: 18000px;
+    top: 16900px;
     left: 75%;
     font-style: bold;
     font-size: 30px;
@@ -1573,7 +1692,7 @@ holi */
     }
     .about-rakhi{
       position: relative;
-      top: 18000px;
+      top: 16900px;
       left: 75%;
   font-size: 22px;
   width: 35%;
@@ -1618,8 +1737,8 @@ holi */
 
 .park{
     position: relative;
-    top: 19000px;
-    left: 30%;
+    top: 17800px;
+    left: 15%;
   }
   
   .park img{
@@ -1658,18 +1777,21 @@ holi */
 
   .title-park{
     position: relative;
-    top: 19000px;
+    top: 17800px;
     left: 75%;
     font-style: bold;
     font-size: 30px;
   
     }
-    .about-park{
+    .hidden9{
+      display: none;
       position: relative;
-      top: 19000px;
+      top: 17800px;
       left: 75%;
-  font-size: 22px;
-  width: 35%;
+    font-size: 30px;
+    width: 65%;
+    color: red;
+    font-family: "handwriting";
     }
   
   @media screen and (max-width:500px){
@@ -1688,7 +1810,7 @@ holi */
 
  .bday{
     position: relative;
-    top: 19800px;
+    top: 18800px;
     left: 100px;
   }
   
@@ -1727,18 +1849,28 @@ holi */
   }
   .title-bday{
     position: relative;
-    top: 19800px;
-    left: 75%;
+    top: 18800px;
+    left: 65%;
     font-style: bold;
     font-size: 30px;
   
     }
     .about-bday{
       position: relative;
-      top: 19800px;
+      top: 18800px;
       left: 75%;
   font-size: 22px;
   width: 35%;
+    }
+    .hidden10{
+      display: none;
+      position: relative;
+      top: 18800px;
+      left: 75%;
+    font-size: 30px;
+    width: 65%;
+    color: red;
+    font-family: "handwriting";
     }
   @media screen and (max-width:500px){
     .bday1{
@@ -1757,7 +1889,7 @@ holi */
 
 .mundan{
     position: relative;
-    top: 20600px;
+    top: 19600px;
 
   }
   
@@ -1795,19 +1927,20 @@ holi */
 
   .title-mundan{
     position: relative;
-    top: 20600px;
-    left: 75%;
+    top: 19600px;
+    left: 65%;
     font-style: bold;
     font-size: 30px;
   
     }
     .about-mundan{
       position: relative;
-      top: 20600px;
-      left: 75%;
+      top: 19600px;
+      left: 65%;
   font-size: 22px;
   width: 35%;
     }
+   
   @media screen and (max-width:500px){
     .mundan1{
       left:5rem;
@@ -1822,12 +1955,13 @@ holi */
 
 .guru{
     position: relative;
-    top: 21700px;
+    top: 20500px;
+  
 
   }
   
   .guru img{
-    width:40%;
+    width:35%;
     position: absolute;
     z-index:20;
     transition:all .5s;
@@ -1860,18 +1994,28 @@ holi */
 
   .title-guru{
     position: relative;
-    top: 21700px;
-    left: 75%;
+    top: 20500px;
+    left: 55%;
     font-style: bold;
     font-size: 30px;
   
     }
     .about-guru{
       position: relative;
-      top: 21700px;
-      left: 75%;
+      top: 20500px;
+      left: 55%;
   font-size: 22px;
   width: 35%;
+    }
+    .hidden12{
+      display: none;
+      position: relative;
+      top: 20500px;
+      left: 55%;
+    font-size: 30px;
+    width: 65%;
+    color: red;
+    font-family: "handwriting";
     }
   @media screen and (max-width:500px){
     .guru1{
@@ -1885,7 +2029,7 @@ holi */
 
 .back{
   position: relative;
-  top: 22000px;
+  top: 20900px;
   left: 50%;
 font-size: 22px;
 width: 35%;
