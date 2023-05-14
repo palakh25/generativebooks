@@ -4,7 +4,7 @@
 
   @font-face {
     font-family: "h";
-    src: url("Metropolis-Light.otf") format("opentype");}
+    src: url("categories/styles/Metropolis-Light.otf") format("opentype");}
   
     @font-face {
       font-family: "hindi";
@@ -60,7 +60,7 @@ body{
   
     left: 15%;
     font-style: bold;
-    font-size: 150px;
+    font-size: 250px;
     font-family: "hindi";
   
     }
