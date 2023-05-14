@@ -1,0 +1,89 @@
+
+
+body{
+    font-family: "light";
+    align-items: center;
+
+}
+#name{
+  position: absolute;
+  top: 5%;
+ left: 120px;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  font-size: 22px;
+  font-family: "helvetica";
+  z-index: 100;
+}
+
+#name2{
+  position: absolute;
+  top: 5%;
+ right: 0px;
+  transform: translate(-50%, -50%);
+  text-align: right;
+  font-size: 22px;
+  font-family: "helvetica";
+  z-index: 100;
+}
+@font-face {
+    font-family: "hindi";
+    src: url("ArivndrPomt-pMLD.ttf") format("opentype");
+}
+@font-face {
+    font-family:"light";
+    src: url("FTRegolaNeueTrial-Light.woff2f") format("opentype");
+}
+
+
+@font-face {
+  font-family: "h";
+  src: url("Metropolis-Light.otf") format("opentype");}
+
+
+h1 {
+  
+    align-items: center;
+    margin: 50px;
+    top: 20%;
+    font-size: 140px !important;
+    font-family: "h";
+    font-style: italic;
+
+
+  }
+  p{
+    font-size: 45px;
+    align-items: center;
+    margin: 50px;
+    top: 20%;
+    font-family: "hindi";
+  }
+  
+  h1:hover span {
+    display: none
+  }
+  
+  h1:hover:before {
+    content: "होली";
+    font-family: "hindi";
+
+  }
+  
+
+.container {
+    display: flex;
+    left: 500px;
+
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 55px;
+    padding-top: 10px;
+    padding-left: 205px;
+  }
+  img{
+      width: 40%;
+      height: 50%;
+  }
